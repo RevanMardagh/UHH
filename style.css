@@ -6,6 +6,10 @@ header {
   min-height: 100vh;
   margin: 0;
   font-family: Lora, sans-serif;
+  background: url(https://www.pngkey.com/png/full/261-2618421_to-support-parents-in-this-responsibility-our-catholic.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 p {
   margin: 0;
