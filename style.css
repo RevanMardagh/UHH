@@ -290,6 +290,9 @@ section {
 }
 
 /* About children rights */
+#about {
+  background-color: #bfdc50;
+}
 .content {
   display: flex;
   justify-content: space-between;
@@ -312,7 +315,6 @@ img {
   max-width: 100%;
 }
 
-/* Responsive */
 /* Responsive */
 
 @media (max-width: 1125px) {
