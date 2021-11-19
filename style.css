@@ -6,6 +6,7 @@
 :root {
   --Poppins: "Poppins", sans-serif;
 }
+
 /* Nav */
 header {
   display: flex;
@@ -280,6 +281,13 @@ section {
 }
 
 /* Nav Menu some changes */
+
+/* Change on click  */
+.change-active {
+  opacity: 0 !important;
+  overflow-x: hidden !important;
+  visibility: hidden !important;
+}
 
 /* About children rights */
 .content {
