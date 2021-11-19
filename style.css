@@ -282,17 +282,7 @@ section {
 
 /* Nav Menu some changes */
 
-/* Change on click  */
-.change-active {
-  opacity: 0 !important;
-  overflow-x: hidden !important;
-  visibility: hidden !important;
-}
-
-/* About children rights */
-#about {
-  background-color: #bfdc50;
-}
+/* Kinda global */
 .content {
   display: flex;
   justify-content: space-between;
@@ -311,8 +301,21 @@ section {
   min-width: 50%;
 }
 
-img {
+.sect img {
   max-width: 100%;
+}
+
+/* About children rights */
+#about {
+  background-color: #fff70e;
+}
+/* Health */
+#health {
+  background-color: #378fd8;
+}
+
+#health .contentBx {
+  padding-left: 30px;
 }
 
 /* Responsive */
