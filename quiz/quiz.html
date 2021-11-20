@@ -12,22 +12,29 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-      #next {
-        margin-top: 50px;
-      }
       header {
         display: block;
         min-height: 0 !important;
         height: 0;
       }
       .center-quiz {
-        width: 70vw;
+        width: 60%;
+        border: solid black 3px;
+        box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+      }
+      .quiz-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
     </style>
   </head>
   <body>
     <!-- Nav -->
-    <header class="sect" style="z-index: 1000;">
+    <header class="sect" style="z-index: 1000">
       <input type="checkbox" id="burger-toggle" />
       <label for="burger-toggle" class="burger-menu">
         <div class="line"></div>
@@ -93,18 +100,12 @@
               </a>
               <a class="image-link" href="../huquqlar/huquq.html#family">
                 <div class="image" data-label="Ailədə yaşamaq">
-                  <img
-                    src="../images/family.jpg"
-                    alt=""
-                  />
+                  <img src="../images/family.jpg" alt="" />
                 </div>
               </a>
               <a class="image-link" href="../huquqlar/huquq.html#abuse">
                 <div class="image" data-label="Zorakılıqdan müdafiə">
-                  <img
-                    src="../images/zorakiliqa_qarshi.jpeg"
-                    alt=""
-                  />
+                  <img src="../images/zorakiliqa_qarshi.jpeg" alt="" />
                 </div>
               </a>
             </div>
@@ -112,22 +113,20 @@
         </div>
       </div>
     </header>
-    <section>
+
+    <div class="quiz-section">
       <div class="center-quiz">
         <h1>Quiz on Important Facts</h1>
         <div class="quiz-container">
           <div id="quiz"></div>
         </div>
-        <button id="previous">Geri</button>
-        <button id="next">İrəli</button>
-        <button id="submit">Kuizi bitir</button>
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
+        <button id="submit">Submit Quiz</button>
         <div id="results"></div>
-        </div>
       </div>
-    </section>
-
+    </div>
 
     <script src="quiz.js"></script>
   </body>
-
 </html>

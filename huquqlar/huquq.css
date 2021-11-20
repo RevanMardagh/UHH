@@ -1,0 +1,51 @@
+/* Maddeler */
+
+.services {
+  background: #111;
+}
+
+.heading.white {
+  color: #fff;
+}
+
+.services .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.servicesBx {
+  padding: 40px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.servicesBx:hover {
+  background: #2196f3;
+}
+
+.servicesBx img {
+  max-width: 80px;
+  filter: invert(1);
+}
+
+.servicesBx h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.servicesBx span {
+  opacity: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .servicesBx {
+    margin: 10px;
+  }
+}

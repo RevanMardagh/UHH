@@ -1,73 +1,65 @@
-
-
-(function(){
+(function () {
   // Functions
-  function buildQuiz(){
+  function buildQuiz() {
     // variable to store the HTML output
     const output = [];
 
     // for each question...
-    myQuestions.forEach(
-      (currentQuestion, questionNumber) => {
+    myQuestions.forEach((currentQuestion, questionNumber) => {
+      // variable to store the list of possible answers
+      const answers = [];
 
-        // variable to store the list of possible answers
-        const answers = [];
-
-        // and for each available answer...
-        for(letter in currentQuestion.answers){
-
-          // ...add an HTML radio button
-          answers.push(
-            `<label>
+      // and for each available answer...
+      for (letter in currentQuestion.answers) {
+        // ...add an HTML radio button
+        answers.push(
+          `<label>
               <input type="radio" name="question${questionNumber}" value="${letter}">
               ${letter} :
               ${currentQuestion.answers[letter]}
             </label>`
-          );
-        }
+        );
+      }
 
-        // add this question and its answers to the output
-        output.push(
-          `<div class="slide">
+      // add this question and its answers to the output
+      output.push(
+        `<div class="slide">
             <div class="question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
           </div>`
-        );
-      }
-    );
+      );
+    });
 
     // finally combine our output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join('');
+    quizContainer.innerHTML = output.join("");
   }
 
-  function showResults(){
-
+  function showResults() {
     // gather answer containers from our quiz
-    const answerContainers = quizContainer.querySelectorAll('.answers');
+    const answerContainers = quizContainer.querySelectorAll(".answers");
 
     // keep track of user's answers
     let numCorrect = 0;
 
     // for each question...
-    myQuestions.forEach( (currentQuestion, questionNumber) => {
-
+    myQuestions.forEach((currentQuestion, questionNumber) => {
       // find selected answer
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
       // if answer is correct
-      if(userAnswer === currentQuestion.correctAnswer){
+      if (userAnswer === currentQuestion.correctAnswer) {
         // add to the number of correct answers
         numCorrect++;
 
         // color the answers green
-        answerContainers[questionNumber].style.color = 'lightgreen';
+        answerContainers[questionNumber].style.color = "lightgreen";
       }
       // if answer is wrong or blank
-      else{
+      else {
         // color the answers red
-        answerContainers[questionNumber].style.color = 'red';
+        answerContainers[questionNumber].style.color = "red";
       }
     });
 
@@ -76,23 +68,20 @@
   }
 
   function showSlide(n) {
-    slides[currentSlide].classList.remove('active-slide');
-    slides[n].classList.add('active-slide');
+    slides[currentSlide].classList.remove("active-slide");
+    slides[n].classList.add("active-slide");
     currentSlide = n;
-    if(currentSlide === 0){
-      previousButton.style.display = 'none';
+    if (currentSlide === 0) {
+      previousButton.style.display = "none";
+    } else {
+      previousButton.style.display = "inline-block";
     }
-    else{
-      previousButton.style.display = 'inline-block';
-    }
-    if(currentSlide === slides.length-1){
-      nextButton.style.display = 'none';
-      nextButton.style.alignItems = 'center';
-      submitButton.style.display = 'inline-block';
-    }
-    else{
-      nextButton.style.display = 'inline-block';
-      submitButton.style.display = 'none';
+    if (currentSlide === slides.length - 1) {
+      nextButton.style.display = "none";
+      submitButton.style.display = "inline-block";
+    } else {
+      nextButton.style.display = "inline-block";
+      submitButton.style.display = "none";
     }
   }
 
@@ -105,62 +94,38 @@
   }
 
   // Variables
-  const quizContainer = document.getElementById('quiz');
-  const resultsContainer = document.getElementById('results');
-  const submitButton = document.getElementById('submit');
+  const quizContainer = document.getElementById("quiz");
+  const resultsContainer = document.getElementById("results");
+  const submitButton = document.getElementById("submit");
   const myQuestions = [
     {
-      question: "1. Hansı beynəlxalq müqavilə uşaqların hüquqlarını qoruyur?",
+      question: "Who invented JavaScript?",
       answers: {
-        A: "Waitangi müqaviləsi",
-        B: "Uşaq Hüquqları haqqında Birləşmiş Millətlər Konvensiyası",
-        C: "İqlim Dəyişikliyi üzrə Birləşmiş Millətlər Təşkilatının Çərçivə Konvensiyası",
-        D: "Ümumdünya İnsan Hüquqları Bəyannaməsi"
+        a: "Douglas Crockford",
+        b: "Sheryl Sandberg",
+        c: "Brendan Eich",
       },
-      correctAnswer: "A"
-    },
-
-    {
-      question: "2. Uşaq hüquqları yaşlı olan hər kəsə şamil edilir...",
-      answers: {
-        A: "16 yaşdan aşağı",
-        B: "10 yaşa qədər",
-        C: "18 yaşdan aşağı",
-        D: "25 yaşdan aşağı"
-      },
-      correctAnswer: "C"
+      correctAnswer: "c",
     },
     {
-      question: "4. Bunlardan hansı hüquq deyil?",
+      question: "Which one of these is a JavaScript package manager?",
       answers: {
-        A: "Ailənizin mədəniyyətini tətbiq etmək",
-        B: "Öz dilinizdə danışmaq",
-        C: "Dininə əməl etmək",
-        D: "İstədiyini geyinmək"
+        a: "Node.js",
+        b: "TypeScript",
+        c: "npm",
       },
-      correctAnswer: "D"
+      correctAnswer: "c",
     },
-
     {
-      question: "4. Sizin ... yaşamaq hüququnuz var.",
+      question: "Which tool can you use to ensure code quality?",
       answers: {
-        A: "Böyük evdə",
-        B: "Təhlükəsiz və təmiz evdə",
-        C: "Hovuzlu evdə",
-        D: "Öz yataq otağınızla evdə"
+        a: "Angular",
+        b: "jQuery",
+        c: "RequireJS",
+        d: "ESLint",
       },
-      correctAnswer: "B"
+      correctAnswer: "d",
     },
-
-    {
-      question: "5. Hüquqlarınızı öyrənmək sizin hüququnuzdur.",
-      answers: {
-        A: "Doğrudur",
-        B: "Yanlış",
-      },
-      correctAnswer: "A"
-    },
-
   ];
 
   // Kick things off
@@ -176,7 +141,7 @@
   showSlide(currentSlide);
 
   // Event listeners
-  submitButton.addEventListener('click', showResults);
+  submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();
