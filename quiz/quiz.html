@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Özünü yoxla</title>
     <link rel="stylesheet" href="quiz.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,21 +15,119 @@
       #next {
         margin-top: 50px;
       }
+      header {
+        display: block;
+        min-height: 0 !important;
+        height: 0;
+      }
+      .center-quiz {
+        width: 70vw;
+      }
     </style>
   </head>
   <body>
+    <!-- Nav -->
+    <header class="sect" style="z-index: 1000;">
+      <input type="checkbox" id="burger-toggle" />
+      <label for="burger-toggle" class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+      <div class="menu">
+        <div class="menu-inner">
+          <ul class="menu-nav">
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="../index.html"
+                ><span>
+                  <div>Ana Səhifə</div>
+                </span></a
+              >
+            </li>
+
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="../chat/chat.html"
+                ><span>
+                  <div>Əlaqə</div>
+                </span></a
+              >
+            </li>
+
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="../quiz/quiz.html"
+                ><span>
+                  <div>Özünü yoxla</div>
+                </span></a
+              >
+            </li>
+          </ul>
+
+          <div class="gallery">
+            <div class="title">
+              <p>
+                <a
+                  class="changemenu"
+                  id="uhhlink"
+                  href="../huquqlar/huquq.html#about"
+                  >Uşaq hüquqları</a
+                >
+              </p>
+            </div>
+            <div class="images">
+              <a
+                class="image-link changemenu"
+                href="../huquqlar/huquq.html#health"
+              >
+                <div class="image" data-label="Sağlamlıq">
+                  <img
+                    class="changemenu"
+                    src="../images/doctor.jpeg"
+                    alt="Photo of health rights for kids"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="../huquqlar/huquq.html#edu">
+                <div class="image" data-label="Təhsil">
+                  <img src="../images/teacher_board.jpg" alt="" />
+                </div>
+              </a>
+              <a class="image-link" href="../huquqlar/huquq.html#family">
+                <div class="image" data-label="Ailədə yaşamaq">
+                  <img
+                    src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="../huquqlar/huquq.html#abuse">
+                <div class="image" data-label="Zorakılıqdan müdafiə">
+                  <img
+                    src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <section>
-      <div class="center">
+      <div class="center-quiz">
         <h1>Quiz on Important Facts</h1>
         <div class="quiz-container">
           <div id="quiz"></div>
         </div>
-        <button id="previous">Previous Question</button>
-        <button id="next">Next Question</button>
-        <button id="submit">Submit Quiz</button>
+        <button id="previous">Geri</button>
+        <button id="next">İrəli</button>
+        <button id="submit">Kuizi bitir</button>
         <div id="results"></div>
+        </div>
       </div>
     </section>
+
+
     <script src="quiz.js"></script>
   </body>
+
 </html>

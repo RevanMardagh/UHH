@@ -4,8 +4,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="chat.css" />
+    <style>
+      header {
+        display: block;
+        min-height: 0 !important;
+        height: 0;
+      }
+    </style>
   </head>
   <body>
+    <!-- Nav -->
+    <header class="sect">
+      <input type="checkbox" id="burger-toggle" />
+      <label for="burger-toggle" class="burger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+      <div class="menu">
+        <div class="menu-inner">
+          <ul class="menu-nav">
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="../index.html"
+                ><span>
+                  <div>Ana Səhifə</div>
+                </span></a
+              >
+            </li>
+
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="#"
+                ><span>
+                  <div>Əlaqə</div>
+                </span></a
+              >
+            </li>
+
+            <li class="menu-nav-item">
+              <a class="menu-nav-link" href="../quiz/quiz.html"
+                ><span>
+                  <div>Özünü yoxla</div>
+                </span></a
+              >
+            </li>
+          </ul>
+
+          <div class="gallery">
+            <div class="title">
+              <p>
+                <a
+                  class="changemenu"
+                  id="uhhlink"
+                  href="../huquqlar/huquq.html#about"
+                  >Uşaq hüquqları</a
+                >
+              </p>
+            </div>
+            <div class="images">
+              <a
+                class="image-link changemenu"
+                onclick="menuChange()"
+                href="../huquqlar/huquq.html#health"
+              >
+                <div class="image" data-label="Sağlamlıq">
+                  <img
+                    class="changemenu"
+                    src="../images/doctor.jpeg"
+                    alt="Photo of health rights for kids"
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="../huquqlar/huquq.html#edu">
+                <div class="image" data-label="Təhsil">
+                  <img src="../images/teacher_board.jpg" alt="" />
+                </div>
+              </a>
+              <a class="image-link" href="#">
+                <div class="image" data-label="Ailədə yaşamaq">
+                  <img
+                    src="https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a class="image-link" href="#">
+                <div class="image" data-label="Zorakılıqdan müdafiə">
+                  <img
+                    src="https://i.loli.net/2019/10/18/buDT4YS6zUMfHst.jpg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div id="top">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+        <div id="mid">
+          <h1>Əlaqə</h1>
+        </div>
+      </div>
+    </section>
     <script
       src="//code.tidio.co/v2xqtunc3fgrm3pcy9gpp7kgwfqahagd.js"
       async

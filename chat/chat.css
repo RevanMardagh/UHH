@@ -1,0 +1,63 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --Poppins: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #c2deef;
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#contact .container {
+  border-radius: 30px;
+  min-height: 100%;
+  min-width: 70%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 10px 4px 24px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 4px 24px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 4px 24px -2px rgba(0, 0, 0, 0.75);
+}
+/* Top */
+#top {
+  background-color: #1875f0;
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-self: flex-start;
+  border-radius: 30px 30px 0 0;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#top .circle {
+  height: 10px;
+  width: 10px;
+  background-color: #f5f5f5;
+  border-radius: 70%;
+  margin-left: 5px;
+}
+
+/* Mid */
+#mid {
+  margin-top: 20px;
+}
+
+#mid h1 {
+  font-family: var(--Poppins);
+  font-weight: 500;
+  font-size: 2rem;
+}
