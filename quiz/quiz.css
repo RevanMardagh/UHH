@@ -62,3 +62,21 @@ button:hover {
   height: 200px;
   margin-top: 40px;
 }
+header {
+  display: block;
+  min-height: 0 !important;
+  height: 0;
+}
+.center-quiz {
+  width: 60%;
+  border: solid black 3px;
+  box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+}
+.quiz-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
