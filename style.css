@@ -323,6 +323,11 @@ section {
   padding-left: 30px;
 }
 
+/* Education */
+#edu {
+  background-color: #8da8c0;
+}
+
 /* Responsive */
 
 @media (max-width: 1125px) {
