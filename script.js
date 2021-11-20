@@ -1,7 +1,14 @@
-// Buttons change menu
-let buttons = document.querySelector(".changemenu");
+// // Buttons change menu
+// let buttons = document.getElementsByClassName("changemenu");
 
-buttons.addEventListener("click", () => {
-  // Change class
-  document.getElementById("burger-toggle").checked = false;
-});
+// function menuChange() {
+//   buttons.forEach(
+//     addEventListener("click", () => {
+//       // Change class
+//       document.getElementById("burger-toggle").checked = false;
+//     })
+//   );
+// }
+
+// console.log(buttons);
+// menuChange();
