@@ -333,8 +333,15 @@ section {
   transform: translateX(-100%); */
 }
 /* Health */
+
 #health {
-  background-color: #0478aa;
+  background: rgb(4, 120, 170);
+  background: linear-gradient(
+    180deg,
+    rgba(4, 120, 170, 1) 0%,
+    rgba(4, 120, 170, 1) 29%,
+    rgba(141, 168, 192, 1) 100%
+  );
 }
 
 .left .contentBx {
@@ -343,13 +350,35 @@ section {
 
 /* Education */
 #edu {
-  background-color: #8da8c0;
+  background: rgb(63, 122, 168);
+  background: linear-gradient(
+    0deg,
+    rgba(63, 122, 168, 1) 10%,
+    rgba(141, 168, 192, 1) 100%
+  );
 }
 
 /* Family */
 #family {
-  background-color: #b0b04c;
+  background: rgb(176, 176, 76);
+  background: linear-gradient(
+    0deg,
+    rgba(176, 176, 76, 1) 0%,
+    rgba(63, 122, 168, 1) 100%
+  );
 }
+
+/* Abuse */
+#abuse {
+  background: rgb(17, 17, 17);
+  background: linear-gradient(
+    0deg,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(173, 175, 77, 1) 43%,
+    rgba(173, 175, 77, 1) 100%
+  );
+}
+
 /* Responsive */
 
 @media (max-width: 1125px) {
