@@ -54,17 +54,44 @@ body {
 /* Mid */
 #mid {
   margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #mid h1 {
   font-family: var(--Poppins);
   font-weight: 500;
   font-size: 2rem;
+  margin-bottom: 30px;
+  /* width: 100%; */
+}
+#mid h2 {
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  word-spacing: 4px;
 }
 
 .phone {
-  min-height: 200px;
-  min-width: 300px;
+  display: flex;
+}
+
+.phoneBx {
+  min-height: 150px;
+  height: 250px;
+  min-width: 200px;
   border: 2px solid black;
+  border-radius: 10px;
   padding: 10px;
+  align-self: flex-start;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.phoneBx .phone-number {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 20px;
 }
