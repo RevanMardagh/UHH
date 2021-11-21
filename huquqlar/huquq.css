@@ -49,3 +49,78 @@
     margin: 10px;
   }
 }
+
+/* Huquq */
+/* About children rights */
+#about {
+  background-image: linear-gradient(#fff70e, #04e8aa);
+  /* background-image: #b0b04c; */
+  transition: transform 0.4s 0.3s;
+  will-change: transform;
+  transform: translateX(-100%);
+}
+/* Health */
+/* #health {
+} */
+
+.left .contentBx {
+  padding-left: 30px;
+}
+
+/* Education */
+#edu {
+  background-color: #8da8c0;
+}
+
+/* Family */
+#family {
+  background-color: #b0b04c;
+}
+/* Responsive */
+
+@media (max-width: 1125px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .w50 {
+    margin-bottom: 20px;
+  }
+  .contentBx {
+    text-align: justify;
+  }
+}
+@media (max-width: 991px) {
+  section {
+    padding: 100px 50px;
+  }
+
+  .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+  }
+
+  .contentBx h3 {
+    font-size: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .w50 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 100px 20px;
+  }
+}
