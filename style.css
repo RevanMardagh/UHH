@@ -28,10 +28,6 @@ header {
   min-height: 100vh;
   margin: 0;
   font-family: Lora, sans-serif;
-  background: url(https://www.pngkey.com/png/full/261-2618421_to-support-parents-in-this-responsibility-our-catholic.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 p {
   margin: 0;
@@ -333,8 +329,9 @@ section {
   transform: translateX(-100%);
 }
 /* Health */
-/* #health {
-} */
+#health {
+  background-color: #0478aa;
+}
 
 .left .contentBx {
   padding-left: 30px;
