@@ -61,3 +61,10 @@ body {
   font-weight: 500;
   font-size: 2rem;
 }
+
+.phone {
+  min-height: 200px;
+  min-width: 300px;
+  border: 2px solid black;
+  padding: 10px;
+}

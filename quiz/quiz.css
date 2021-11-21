@@ -17,6 +17,10 @@ h1 {
   color: #fff;
 }
 
+p {
+  margin-right: 10px;
+}
+
 header {
   display: block;
   min-height: 0 !important;
@@ -79,10 +83,17 @@ button:hover {
   box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 23px 0px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
 }
 .quiz-section {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: rgb(34, 119, 153);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 119, 153, 1) 10%,
+    rgba(34, 195, 185, 1) 100%
+  );
 }
