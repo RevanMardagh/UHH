@@ -90,7 +90,7 @@ p {
   left: 25%;
   width: 50%;
   height: 3px;
-  background: rgba(43, 61, 79, 0.3);
+  background-color: black;
   border-radius: 10px;
   overflow: hidden;
   transition: 0.5s;
