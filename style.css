@@ -326,12 +326,15 @@ section {
 
 /* About children rights */
 #about {
-  background-color: #fff70e;
+  background-image: linear-gradient(#fff70e, #04e8aa);
+  /* background-image: #b0b04c; */
+  transition: transform 0.4s 0.3s;
+  will-change: transform;
+  transform: translateX(-100%);
 }
 /* Health */
-#health {
-  background-color: #04e8aa;
-}
+/* #health {
+} */
 
 .left .contentBx {
   padding-left: 30px;
