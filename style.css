@@ -322,7 +322,12 @@ section {
 
 /* About children rights */
 #about {
-  background-color: linear-gradient(#fff70e, #04e8aa);
+  background: rgb(30, 255, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(30, 255, 0, 0.8099614845938375) 0%,
+    rgba(4, 120, 170, 1) 100%
+  );
   /* transition: transform 0.4s 0.3s;
   will-change: transform;
   transform: translateX(-100%); */
